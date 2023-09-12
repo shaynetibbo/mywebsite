@@ -1,30 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shayne Tibbo - Resume</title>
-    <!-- Include Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css">
+    <title>Your Name - Resume</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
-        /* Your existing styles here... */
+        /* Add responsive CSS styles here */
+        @media (max-width: 768px) {
+            header {
+                padding: 20px;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            header p {
+                font-size: 16px;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            ul.skills {
+                flex-direction: column;
+            }
+
+            .projects {
+                padding: 10px;
+            }
+
+            .project {
+                margin: 10px 0;
+            }
+
+            .project h3 {
+                font-size: 18px;
+            }
+
+            .project p {
+                font-size: 14px;
+            }
+        }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <!-- ... Your navigation code ... -->
-    </nav>
-
     <header>
-        <h1>Shayne Tibbo</h1>
-        <p>Quality Designer</p>
+        <h1>Your Name</h1>
+        <p>Web Developer</p>
     </header>
+    <div class="container">
+        <h2>Summary</h2>
+        <p>
+            Write a brief summary of your skills and experience here.
+        </p>
 
-    <!-- The rest of your content... -->
+        <h2>Education</h2>
+        <p><strong>University Name</strong> - Bachelor's Degree in Computer Science</p>
+        <p><em>Month Year - Month Year</em></p>
 
-    <!-- Include jQuery and Bootstrap JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.bundle.min.js"></script>
+        <h2>Experience</h2>
+        <p><strong>Job Title</strong> - Company Name</p>
+        <p><em>Month Year - Present</em></p>
+        <ul class="skills">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>GitHub</li>
+        </ul>
+
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Description of Project 1.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Description of Project 2.</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
