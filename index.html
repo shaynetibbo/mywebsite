@@ -5,68 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name - Resume</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 30px 0;
-        }
-
-        header h1 {
-            margin: 0;
-            padding: 0;
-            font-size: 36px;
-            letter-spacing: 2px;
-        }
-
-        header p {
-            font-size: 18px;
-            margin-top: 10px;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-        }
-
-        h2 {
-            font-size: 24px;
-            margin-top: 20px;
-            color: #333;
-        }
-
-        p {
-            line-height: 1.6;
-        }
-
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .skills li {
-            background-color: #333;
-            color: #fff;
-            padding: 5px 10px;
-            margin: 5px;
-            border-radius: 3px;
-        }
+        /* ... (Your CSS styles here) ... */
     </style>
 </head>
 <body>
@@ -99,6 +38,34 @@
             <li>JavaScript</li>
             <li>GitHub</li>
         </ul>
+
+        <!-- JavaScript Elements -->
+        <h2>Projects</h2>
+        <button id="toggleProjects">Show Projects</button>
+        <div id="projects" style="display: none;">
+            <h3>Project 1</h3>
+            <p>Description of Project 1.</p>
+
+            <h3>Project 2</h3>
+            <p>Description of Project 2.</p>
+        </div>
     </div>
+
+    <!-- JavaScript code -->
+    <script>
+        // JavaScript to toggle the visibility of the projects section
+        const toggleButton = document.getElementById("toggleProjects");
+        const projectsSection = document.getElementById("projects");
+
+        toggleButton.addEventListener("click", () => {
+            if (projectsSection.style.display === "none" || projectsSection.style.display === "") {
+                projectsSection.style.display = "block";
+                toggleButton.textContent = "Hide Projects";
+            } else {
+                projectsSection.style.display = "none";
+                toggleButton.textContent = "Show Projects";
+            }
+        });
+    </script>
 </body>
 </html>
