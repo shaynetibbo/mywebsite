@@ -1,7 +1,4 @@
-
-<html>
-  <title>
-    First Website<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,20 +9,26 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f5f5f5;
         }
 
         header {
             background-color: #333;
             color: #fff;
             text-align: center;
-            padding: 20px;
+            padding: 30px 0;
         }
 
-        h1 {
+        header h1 {
             margin: 0;
             padding: 0;
             font-size: 36px;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 18px;
+            margin-top: 10px;
         }
 
         .container {
@@ -34,11 +37,13 @@
             padding: 20px;
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
         }
 
         h2 {
             font-size: 24px;
             margin-top: 20px;
+            color: #333;
         }
 
         p {
@@ -48,6 +53,19 @@
         ul {
             list-style-type: disc;
             padding-left: 20px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .skills li {
+            background-color: #333;
+            color: #fff;
+            padding: 5px 10px;
+            margin: 5px;
+            border-radius: 3px;
         }
     </style>
 </head>
@@ -75,7 +93,7 @@
         </ul>
 
         <h2>Skills</h2>
-        <ul>
+        <ul class="skills">
             <li>HTML5</li>
             <li>CSS3</li>
             <li>JavaScript</li>
@@ -83,20 +101,4 @@
         </ul>
     </div>
 </body>
-</html>
-
-  </title>
-
-  <body>
-    <h1>This is my frst Github Page</h1>
-  </body>
-
-  <style>
-    body { 
-        background-color:green;
-        color:#fff;
-        text-align:center;
-         }
-  </style>
-  
 </html>
