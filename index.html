@@ -3,140 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Shayne Tibbo - Resume</title>
+    <title>Shayne Tibbo - Resume</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #007BFF;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        header h1 {
-            font-size: 36px;
-        }
-
-        header p {
-            font-size: 18px;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-        }
-
-        h2 {
-            font-size: 24px;
-            color: #333;
-            margin-top: 20px;
-        }
-
-        p {
-            line-height: 1.6;
-        }
-
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .skills li {
-            background-color: #007BFF;
-            color: #fff;
-            padding: 5px 10px;
-            margin: 5px;
-            border-radius: 3px;
-        }
-
-        button {
-            background-color: #007BFF;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        button:hover {
-            background-color: #0056b3;
-        }
+        /* Your existing styles here... */
     </style>
 </head>
 <body>
-    <header>
-        <h1> Shayne Tibbo</h1>
-        <p> Quality Designer</p>
-    </header>
-    <div class="container">
-        <h2>Summary</h2>
-        <p>
-            Write a brief summary of your skills and experience here.
-        </p>
-
-        <h2>Education</h2>
-        <p><strong>University Name</strong> - Bachelor's Degree in Computer Science</p>
-        <p><em>Month Year - Month Year</em></p>
-
-        <h2>Experience</h2>
-        <p><strong>Job Title</strong> - Company Name</p>
-        <p><em>Month Year - Present</em></p>
-        <ul>
-            <li>Responsibility 1</li>
-            <li>Responsibility 2</li>
-        </ul>
-
-        <h2>Skills</h2>
-        <ul class="skills">
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <li>GitHub</li>
-        </ul>
-
-        <!-- JavaScript Elements -->
-        <h2>Projects</h2>
-        <button id="toggleProjects">Show Projects</button>
-        <div id="projects" style="display: none;">
-            <h3>Project 1</h3>
-            <p>Description of Project 1.</p>
-
-            <h3>Project 2</h3>
-            <p>Description of Project 2.</p>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Website</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
+    </nav>
 
-    <!-- JavaScript code -->
-    <script>
-        // JavaScript to toggle the visibility of the projects section
-        const toggleButton = document.getElementById("toggleProjects");
-        const projectsSection = document.getElementById("projects");
+    <header>
+        <h1>Shayne Tibbo</h1>
+        <p>Quality Designer</p>
+    </header>
 
-        toggleButton.addEventListener("click", () => {
-            if (projectsSection.style.display === "none" || projectsSection.style.display === "") {
-                projectsSection.style.display = "block";
-                toggleButton.textContent = "Hide Projects";
-            } else {
-                projectsSection.style.display = "none";
-                toggleButton.textContent = "Show Projects";
-            }
-        });
-    </script>
+    <!-- The rest of your content... -->
 </body>
 </html>
